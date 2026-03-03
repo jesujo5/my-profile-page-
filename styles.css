@@ -1,0 +1,147 @@
+body{
+    
+    margin: 0;
+    padding: 0;
+    background-color: #0A0A0A ;
+    color :white;
+    font-family: Poppins,  sans-serif;
+
+}
+.nav-left{
+    display: flex;
+    gap: 10px;
+}
+.navbar{
+display: flex;
+justify-content:space-between;
+padding :  10px 20px;
+align-items: center;
+background-color: #1A1A1A;
+
+}
+.nav-right{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+
+}
+.nav-right a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    color:#33A852
+}
+.profile{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.hero span{
+    color: #33A852;
+    padding: 10px 20px
+}
+.btn-resume{
+    
+    background-color: #33A852;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 60px;
+    cursor: pointer;
+}
+.btn-hire{
+    
+    background-color: transparent;
+    border: 2px solid #33A852;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 60px;
+    
+}
+.about{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #304130 ;
+    padding:   30px;
+}
+.edu{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+   border-radius: 10px;
+   padding: 20px;
+}
+
+.skills{
+    
+ padding: 20px;
+   background-color : #011f01;
+   border-radius: 60px;
+   border-top: 5px solid #33A852;
+   padding: 20px;
+}
+.or{
+   
+   padding: 20px;
+   background-color : #011f01;
+   border-radius: 60px;
+   border-top: 5px solid #33A852;
+   padding: 20px;
+}
+.project{
+    display: flex;
+    justify-content:space-around;
+
+}
+
+.bot{
+    display:inline;
+     justify-content :center;
+     position: relative;
+    top: 20px;
+    left: 30px;
+     backround-color :  #05eb3b;
+     padding: 20px;
+     border-radius: 60px;
+    border-top: 5px solid #33A852;
+    
+}
+
+@media(max-width:767px){
+    
+}
+
+/* Modal styles for password gate */
+.modal{
+    position: fixed;
+    inset: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.6);
+    z-index: 9999;
+}
+.modal.open{ display: flex; }
+.modal-content{
+    background: #0f0f0f;
+    color: #fff;
+    padding: 24px;
+    border-radius: 8px;
+    width: 320px;
+    max-width: calc(100% - 48px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.6);
+}
+.modal-content h2{ margin: 0 0 8px 0; }
+.modal-content input{
+    width: 100%;
+    padding: 8px 10px;
+    margin: 8px 0 12px 0;
+    border-radius: 4px;
+    border: 1px solid #333;
+    background: #0b0b0b;
+    color: #fff;
+}
+.modal-actions{ display:flex; gap:8px; justify-content:flex-end; }
+.modal-actions button{ padding:8px 12px; border-radius:6px; border: none; cursor:pointer; }
+.modal-actions #pw-cancel{ background:#444; color:#fff }
+.modal-actions #pw-submit{ background:#33A852; color:#fff }
+.pw-error{ color:#ff6b6b; min-height:1.2em; margin-top:8px; }
