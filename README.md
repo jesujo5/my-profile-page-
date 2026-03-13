@@ -1,1 +1,1 @@
-this is my first web page which i developed , whcih has undergone a series of improvements , learning processes
+this is my first web page which , this page acts as a trail and learning web page which is undergoing a series of improvements  through my  learning processes in fields of full stack web development .
