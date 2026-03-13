@@ -7,18 +7,33 @@ body{
     font-family: Poppins,  sans-serif;
 
 }
-.nav-left{
+.nav-left{ display: flex; gap: 10px; } 
+.navbar{ 
+    position: fixed;
+    top: 1%; 
+    background-color:#333; 
+    width: 70%;
+    /* reduce height by trimming vertical padding */
+    padding: 4px 12px;
+    height: 60px;
+    box-sizing: border-box;
+    border-radius: 12px 12px ;
+    left: 15%;
     display: flex;
-    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    
 }
-.navbar{
-display: flex;
-justify-content:space-between;
-padding :  10px 20px;
-align-items: center;
-background-color: #1A1A1A;
+.navbtn{ 
+    background-color: #0A0A0A; 
+    color: #fff;
+     padding: 4px 8px;
+      border-radius:5px;
+      font-size: 14px;
+      text-decoration: none;
+}
 
-}
 .nav-right{
     display: flex;
     justify-content: space-evenly;
@@ -26,7 +41,7 @@ background-color: #1A1A1A;
 
 }
 .nav-right a:hover{
-    text-decoration: underline;
+    
     cursor: pointer;
     color:#33A852
 }
@@ -56,32 +71,31 @@ background-color: #1A1A1A;
     border-radius: 60px;
     
 }
-.about{
+#about{
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: #304130 ;
-    padding:   30px;
+    padding:   20px;
+  
 }
 .edu{
     display: flex;
-    justify-content: space-around;
+    justify-content:space-around;
     padding: 20px;
    border-radius: 10px;
-   padding: 20px;
+   padding: 20px ;
 }
 
-.skills{
+#education{
     
- padding: 20px;
+   padding: 20px;
    background-color : #011f01;
    border-radius: 60px;
    border-top: 5px solid #33A852;
    padding: 20px;
 }
-.or{
-   
-   padding: 20px;
+.UnderGraducation {
    background-color : #011f01;
    border-radius: 60px;
    border-top: 5px solid #33A852;
@@ -89,7 +103,7 @@ background-color: #1A1A1A;
 }
 .project{
     display: flex;
-    justify-content:space-around;
+   justify-content: space-around;
 
 }
 
@@ -99,11 +113,24 @@ background-color: #1A1A1A;
      position: relative;
     top: 20px;
     left: 30px;
-     backround-color :  #05eb3b;
-     padding: 20px;
+     background-color :  #05eb3b;
+     padding-left: 20px;
+    padding-top: 50px;
      border-radius: 60px;
     border-top: 5px solid #33A852;
     
+}
+#contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    gap :10px;
+    padding-left: 20px;
+    padding-top: 50px;
+}
+.insta{
+    background-color: #33A852;
 }
 
 @media(max-width:767px){
