@@ -43,12 +43,15 @@ body{
 .nav-right a:hover{
     
     cursor: pointer;
-    color:#33A852
+    color:#33A852;
 }
 .profile{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content :end;
+    margin-right: 10%;
+
+
+    
 }
 .hero span{
     color: #33A852;
@@ -75,8 +78,11 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #304130 ;
+    background-color: cadetblue ;
     padding:   20px;
+    border-radius: 12px;
+    gap :10px;
+    margin: 1%;
   
 }
 .edu{
@@ -91,84 +97,100 @@ body{
     
    padding: 20px;
    background-color : #011f01;
-   border-radius: 60px;
+   border-radius: 12px;
    border-top: 5px solid #33A852;
    padding: 20px;
 }
 .UnderGraducation {
    background-color : #011f01;
-   border-radius: 60px;
+   border-radius: 12px;
    border-top: 5px solid #33A852;
    padding: 20px;
 }
 .project{
-    display: flex;
-   justify-content: space-around;
-
+   display: flex;
+   justify-content: space-evenly;
+   gap: 2%;
+   margin : 1%;
 }
-
-.bot{
-    display:inline;
-     justify-content :center;
-     position: relative;
-    top: 20px;
-    left: 30px;
-     background-color :  #05eb3b;
-     padding-left: 20px;
-    padding-top: 50px;
-     border-radius: 60px;
-    border-top: 5px solid #33A852;
-    
+.projectbars{
+    background-color:#444;
+    border-radius: 12px;
+    padding: 4px 8px;
 }
 #contact{
     display: flex;
+    background-color:cadetblue;
     flex-direction: column;
     justify-content: space-around;
-    align-items: start;
+    align-items: stretch;
+    border-radius: 12px;
     gap :10px;
-    padding-left: 20px;
+    margin: 1%;
+    padding: 20px;
     padding-top: 50px;
+
 }
 .insta{
-    background-color: #33A852;
+    background-color:antiquewhite;
 }
 
-@media(max-width:767px){
-    
+/* Responsive Design */
+
+/* Tablet and smaller screens */
+@media (max-width: 1024px) {
+    .navbar {
+        width: 90%;
+        left: 5%;
+        padding: 4px 8px;
+    }
+    .navbtn {
+        font-size: 12px;
+        padding: 2px 6px;
+    }
 }
 
-/* Modal styles for password gate */
-.modal{
-    position: fixed;
-    inset: 0;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    background: rgba(0,0,0,0.6);
-    z-index: 9999;
+/* Mobile phones */
+@media (max-width: 768px) {
+    .navbar {
+        width: 95%;
+        left: 2.5%;
+        height: auto;
+        padding: 8px 12px;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .nav-left h2 {
+        font-size: 16px;
+    }
+    .nav-right {
+        justify-content: center;
+    }
+    .profile {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+    .edu {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .project {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .projectbars {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    #about {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
+    #contact {
+        align-items: center;
+        text-align: center;
+        padding: 40px 20px;
+    }
 }
-.modal.open{ display: flex; }
-.modal-content{
-    background: #0f0f0f;
-    color: #fff;
-    padding: 24px;
-    border-radius: 8px;
-    width: 320px;
-    max-width: calc(100% - 48px);
-    box-shadow: 0 8px 24px rgba(0,0,0,0.6);
-}
-.modal-content h2{ margin: 0 0 8px 0; }
-.modal-content input{
-    width: 100%;
-    padding: 8px 10px;
-    margin: 8px 0 12px 0;
-    border-radius: 4px;
-    border: 1px solid #333;
-    background: #0b0b0b;
-    color: #fff;
-}
-.modal-actions{ display:flex; gap:8px; justify-content:flex-end; }
-.modal-actions button{ padding:8px 12px; border-radius:6px; border: none; cursor:pointer; }
-.modal-actions #pw-cancel{ background:#444; color:#fff }
-.modal-actions #pw-submit{ background:#33A852; color:#fff }
-.pw-error{ color:#ff6b6b; min-height:1.2em; margin-top:8px; }
