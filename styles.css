@@ -7,7 +7,10 @@ body{
     font-family: Poppins,  sans-serif;
 
 }
-.nav-left{ display: flex; gap: 10px; } 
+.nav-left{
+     display: flex;
+      gap: 10px;
+}
 .navbar{ 
     position: fixed;
     top: 1%; 
@@ -23,8 +26,10 @@ body{
     justify-content: space-between;
     align-items: center;
     z-index: 1000;
+    border: 3px solid #ffffff95; } 
     
-}
+    
+
 .navbtn{ 
     background-color: #0A0A0A; 
     color: #fff;
@@ -49,13 +54,11 @@ body{
     display: flex;
     justify-content :end;
     margin-right: 10%;
-
-
     
 }
-.hero span{
-    color: #33A852;
-    padding: 10px 20px
+.profile span{
+    color: cadetblue;
+    padding: 10px 20px;
 }
 .btn-resume{
     
@@ -79,6 +82,7 @@ body{
     justify-content: space-around;
     align-items: center;
     background-color: cadetblue ;
+    border: 3px solid #ffffff95;
     padding:   20px;
     border-radius: 12px;
     gap :10px;
@@ -98,29 +102,31 @@ body{
    padding: 20px;
    background-color : #011f01;
    border-radius: 12px;
-   border-top: 5px solid #33A852;
+   border: 3px solid #33A852;
    padding: 20px;
 }
 .UnderGraducation {
    background-color : #011f01;
    border-radius: 12px;
-   border-top: 5px solid #33A852;
+   border: 3px solid #33A852;
    padding: 20px;
 }
 .project{
    display: flex;
-   justify-content: space-evenly;
+   justify-content:space-between;
    gap: 2%;
    margin : 1%;
 }
 .projectbars{
     background-color:#444;
+    border: 3px solid #ffffff95;
     border-radius: 12px;
     padding: 4px 8px;
 }
 #contact{
     display: flex;
     background-color:cadetblue;
+    border: 3px solid #ffffff95;
     flex-direction: column;
     justify-content: space-around;
     align-items: stretch;
@@ -131,8 +137,9 @@ body{
     padding-top: 50px;
 
 }
-.insta{
-    background-color:antiquewhite;
+.contactsbutton{
+    background-color: #bdcad0b5;
+    border-radius: 8px;
 }
 
 /* Responsive Design */
