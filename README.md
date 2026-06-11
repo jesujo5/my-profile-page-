@@ -1,1 +1,1 @@
-this is my first web page which , this page acts as a trail and learning web page which is undergoing a series of improvements  through my  learning processes in fields of full stack web development .
+this is my first web page which is an outcome of my paticiption in various bootcamps  conduted in sastra university through tech clubs like DCS and GDG. this is the most basic version of my coding knowledge. 
