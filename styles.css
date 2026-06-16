@@ -10,6 +10,9 @@ body{
     font-family: Poppins  sans-serif;
 
 }
+html {
+        scroll-behavior: smooth;
+    }
 a:visited{
     color: rgb(242, 247, 245);
 }
