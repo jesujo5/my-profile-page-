@@ -1,11 +1,17 @@
 body{
     
-    margin: 0;
-    padding: 0;
+    margin: 10;
+    border:3px solid rgb(49, 241, 20);
+    border-radius: 1% ;
+    border-style: double;
+    padding: 20px;
     background-color: #0A0A0A ;
     color :white;
-    font-family: Poppins,  sans-serif;
+    font-family: Poppins  sans-serif;
 
+}
+a:visited{
+    color: rgb(242, 247, 245);
 }
 .nav-left{
      display: flex;
@@ -106,10 +112,9 @@ body{
 #education{
     
    padding: 20px;
-   background-color : #011f01;
+  background-color : #011f01;
    border-radius: 12px;
    border: 3px solid #33A852;
-   padding: 20px;
 }
 .UnderGraducation {
    background-color : #011f01;
